@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>To Do List</title>
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=The+Girl+Next+Door&display=swap');
+    </style>
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <h1>To do List</h1>
+      <span class="material-symbols-outlined">
+        settings
+      </span>
+    </header>
+    <!-- Tarefas -->
+    <main id="task-container"> 
+    </main>
+    <!-- Botao Adicionar Tarefa -->
+    <div id="add-task-btn" >
+      <span class="material-symbols-outlined">
+        add
+      </span>
+    </div>
+    <!-- Modal Adicionar Tarefa -->
+    <div id="modal">
+      <div class="modal-content">
+        <label class="modal-content-label">Adicionar Tarefa</label>
+        <div class="modal-content-body">
+            <input class="todo-input" type="text" placeholder="Digite sua tarefa aqui..." />
+            <button id="todo-btn" class="todo-btn" type="submit">
+              <span class="material-symbols-outlined">
+                add
+              </span>
+            </button>
+        </div>
+      </div>
+    </div>
+    <!-- Footer -->
+    <footer>
+      <span id="clear-tasks" class="material-symbols-outlined">
+        delete
+      </span>
+      <div class="progress-bar">
+        <div class="progress"></div>
+      </div>
+    </footer>
+
+    <script src="index.js"></script>
+  </body>
+</html>

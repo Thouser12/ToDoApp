@@ -1,0 +1,145 @@
+:root {
+  --primary-bg-color: #6a1d25;
+}
+
+
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: #f8f8f8;
+}
+
+header {
+  background-color: var(--primary-bg-color);
+  color: white;
+  text-align: center;
+  padding: 20px;
+  font-family: "Work Sans", sans-serif;
+  box-shadow: 0px 5px 5px gray;
+  position: relative;
+}
+
+header span {
+  position: absolute;
+  top: 20px;
+  right: 25px;
+  cursor: pointer;
+}
+
+main {
+  flex: 1;
+  overflow-y: auto;
+  padding: 20px;
+}
+
+#add-task-btn {
+  text-align: left;
+  margin: 10px;
+  cursor: pointer;
+}
+
+#add-task-btn span {
+  font-size: 40px;
+  color: var(--primary-bg-color);
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  background: #eee;
+  box-shadow: 0 -2px 5px rgba(0,0,0,0.1);
+}
+
+#clear-tasks {
+  cursor: pointer;
+  color: var(--primary-bg-color);
+  margin-right: 15px;
+}
+
+.progress-bar {
+  flex: 1;
+  height: 20px;
+  background: #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.progress {
+  height: 100%;
+  width: 0%;
+  background: var(--primary-bg-color);
+}
+
+#modal {
+  display: none; 
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1; 
+  width: 100%; 
+  height: 100%; 
+  overflow: auto; 
+  background-color: rgb(0,0,0); 
+  background-color: rgba(0,0,0,0.4); 
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-content {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.modal-content-body {
+  display: flex;
+  align-items: center; 
+  justify-content: center; 
+  gap: 10px;
+}
+
+.modal-content-label {
+  font-family: "Work Sans", sans-serif;
+  font-size: large;
+  font-weight: 700;
+  color: var(--primary-bg-color);
+}
+
+.todo-input {
+  flex: 1;
+  padding: 10px;
+  margin: 15px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  height: 25px;
+}
+
+.todo-btn {
+  padding: 10px;
+  background-color: var(--primary-bg-color);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  height: 40px;
+  width: 40px;
+  display: flex;
+  align-items: center; 
+  justify-content: center; 
+}
+
+.todo-input:focus {
+  border-color: var(--primary-bg-color);
+  outline: none; /* remove a borda azul padrão do navegador */
+  box-shadow: 0 0 4px var(--primary-bg-color); /* leve brilho, opcional */
+  transition: all 0.2s ease-in-out;
+}
